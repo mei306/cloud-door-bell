@@ -1,7 +1,7 @@
-const char* ssid     = "297-6F-2.4G";    //Wi-Fi帳號
-const char* password = "su112976";   //Wi-Fi密碼
+const char* ssid     = "你的WIFI帳號";    //Wi-Fi帳號
+const char* password = "你的WIFI密碼";   //Wi-Fi密碼
 int pinPIR = 13;   //PIR人體移動感測器腳位
-String myToken = "MnveSKcwbePyiUiuszFD6Cr9rA5bwLv6HhiOCaGA1Jb";    //Line Notify權杖
+String myToken = "你的Line Notify token";    //Line Notify權杖
 
 #include <WiFi.h>
 #include <WiFiClientSecure.h>

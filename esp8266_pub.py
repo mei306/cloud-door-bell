@@ -11,20 +11,20 @@ def connect_wifi(ssid,password):
     sta.active(True)
     if not sta.isconnected():
         print("Connecting to network...")
-        sta.connect('kki', '0907308446')
+        sta.connect(ssid, password)
         while not sta.isconnected():
             pass
     print("network config:", sta.ifconfig())
     
-SSID = "kki"
-PASSWORD = "0907308446"
+SSID = "你的WIFI名稱"
+PASSWORD = "你的WIFI密碼"
 connect_wifi(SSID,PASSWORD)
 
 xtools.connect_wifi_led()
 button = Pin(0,Pin.IN,Pin.PULL_UP)
-topic_pub=b'topic/bell'
+topic_pub=b'你的訂閱topic'
 client_id = xtools.get_id()
-mqtt_server = '172.20.10.13'
+mqtt_server = '你的server ip'
 
 def connect_mqtt():
   global client_id, mqtt_server
